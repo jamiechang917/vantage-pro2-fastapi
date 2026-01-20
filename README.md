@@ -8,7 +8,7 @@ It connects to the weather console via a serial interface (USB/Serial adapter), 
 
 * **Real-time Data:** Fetches standard weather metrics (Temperature, Humidity, Wind Speed/Direction, Rain, Barometer) via LOOP packets.
 * **High/Low Records:** Retrieves daily, monthly, and yearly highs and lows via HILOWS packets.
-* **Background Caching:** Runs a background thread to fetch data every 60 seconds, ensuring API requests are instant and do not block the serial bus.
+* **Background Caching:** Runs a background thread to fetch data every 5 seconds (changeable), ensuring API requests are instant and do not block the serial bus.
 * **JSON API:** Simple REST endpoint for easy integration with frontend dashboards, Home Assistant, or other monitoring tools.
 
 ## Prerequisites
